@@ -1,0 +1,21 @@
+species = input("Укажите, к какому виду относится питомец: ")
+while not species.isalpha():
+    species = input("Ошибка. Введите только буквы: ")
+
+name = input("Укажите кличку питомца: ")
+while not name.isalpha():
+    name = input("Ошибка. Введите только буквы: ")
+
+age = input("Укажите возраст питомца: ")
+while not age.isdigit():
+    age = input("Ошибка. Введите целое число: ")
+
+age = int(age)
+if age % 10 == 1 and age != 11:
+    case = "год"
+elif age % 10 >= 2 and age % 10 <= 4 and age not in [12, 13, 14]:
+    case = "года"
+else:
+    case = "лет"
+
+print(f"Это {species}, по кличке {name}. Возраст {age} {case}.")

@@ -59,9 +59,5 @@ while not LHomo6.isalpha():
     LHomo6 = input("Допустимы только буквы. Повторите ввод: ")
 
 print("Стадии эволюции человека по порядку, с указанием переходов:")
-print(Predecessors1, Predecessors2, sep=" => ")
-print(Australopithecus sep=" => ")
-print(EHomo0, EHomo1 sep=" => ")
-print(MHomo0, MHomo1, MHomo2 sep=" => ")
-print(LHomo0,LHomo1,LHomo2,LHomo3,LHomo4,LHomo5,LHomo6 sep=" => ")
-print(Homo)
+print(Predecessors1, Predecessors2, Australopithecus, EHomo0, EHomo1, MHomo0, MHomo1, MHomo2,LHomo0,LHomo1,LHomo2,LHomo3,LHomo4,LHomo5,LHomo6, sep=" => ")
+
